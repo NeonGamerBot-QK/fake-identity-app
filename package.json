@@ -4,12 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^3.1.9",
     "husky": "^8.0.3",
+    "inquirer": "8.0.0",
+    "json2csv": "^6.0.0-alpha.2",
     "prettier": "^2.8.8",
     "pretty-quick": "^3.1.3"
   },
   "scripts": {
     "prepare": "husky install",
-    "lint": "pretty-quick --staged"
+    "lint": "pretty-quick --staged",
+    "build": "pkg index.js -C gZip --out-path out",
+    "postpack": "yarn build"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.1",
+    "pkg": "^5.8.1"
   }
 }
