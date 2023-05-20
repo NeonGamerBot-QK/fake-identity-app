@@ -1,14 +1,8 @@
 # SPM 
 .spm
 .spmrc
-node_modules
-
+node_modules/**
 test
+node_modules
 # release files
 out
-node_modules/.yarn-integrity
-node_modules/chalk/index.d.ts
-node_modules/chalk/package.json
-node_modules/chalk/readme.md
-node_modules/chalk/source/index.js
-node_modules/chalk/source/templates.js
